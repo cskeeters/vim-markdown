@@ -602,6 +602,7 @@ function! s:VersionAwareNetrwBrowseX(url)
         if executable(browser)
             echom browser
             exec "silent !".l:browser." ".shellescape(a:url,0)
+            break
         endif
     endfor
 endf
